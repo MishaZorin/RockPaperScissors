@@ -96,3 +96,11 @@ button:hover {
     color: white;
 }
 
+@media (max-width: 600px) {
+    .display{
+        margin: 100px;
+    }
+    .game{
+        max-width: 600px;
+    }
+}
