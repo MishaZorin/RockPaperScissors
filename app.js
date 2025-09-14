@@ -26,6 +26,8 @@ function startGame(userChoice) {
     
 
     if (computerChoice == userChoice) {
+        // playerScoreValue = 0
+        // computerScoreValue = 0
         score.innerHTML = 'Ничья'
         
     }
@@ -35,11 +37,11 @@ function startGame(userChoice) {
         (userChoice === 'scissors' && computerChoice === 'paper')
     ) {
         win.innerHTML = "Вы Победили!"
-        playerScoreValue++
+         playerScoreValue++
     }
     else {
         win.innerHTML = "Вы проиграли!"
-        computerScoreValue++
+         computerScoreValue++
     }
     computerScore.textContent = "Компьютер:" + computerScoreValue
     playerScore.textContent = "Игрок:" + playerScoreValue
@@ -49,6 +51,3 @@ function startGame(userChoice) {
 
 
 }
-
-// computerScore.innerText = `Компьютер: ${computerScore}`
-// playerScore.textContent = `Игрок: ${playerScore}`
