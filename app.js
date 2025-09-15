@@ -35,13 +35,17 @@ function startGame(userChoice) {
         (userChoice === 'rock' && computerChoice === 'scissors') ||
         (userChoice === 'paper' && computerChoice === 'rock') ||
         (userChoice === 'scissors' && computerChoice === 'paper')
+        
+        
     ) {
         win.innerHTML = "Вы Победили!"
          playerScoreValue++
+         score.innerHTML = 'Попыток осталось:∞'
     }
     else {
         win.innerHTML = "Вы проиграли!"
          computerScoreValue++
+         score.innerHTML = 'Попыток осталось:∞'
     }
     computerScore.textContent = "Компьютер:" + computerScoreValue
     playerScore.textContent = "Игрок:" + playerScoreValue
